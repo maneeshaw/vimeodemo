@@ -1,0 +1,9 @@
+.env
+.ebignore
+npm-debug.log
+node_modules
+assets
+public/.jshintrc
+.elasticbeanstalk
+.ebextensions
+server

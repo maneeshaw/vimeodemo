@@ -1,0 +1,28 @@
+<header class="fill-width ratio ratio--5-2" data-component="banner">
+   <img src="https://static.makeuseof.com/wp-content/uploads/2009/11/infringement-big-letters-copyright.jpg">
+  <div class="pos-absolute bg-maroon-transparent fill-width fill-height pos-top pos-left padding-top-xxlarge text-center row">
+    <div class="col small-centered small-3-4 medium-2-3 large-1-2 xlarge-1-3">
+
+    </div>
+  </div>
+
+
+
+</header>
+
+{{> _shared/github }}
+
+<section data-component="collections" class="padding-large">
+  {{#each collections}}
+    <h2 class="margin-left-medium padding-bottom-small head-2 border border--bottom">{{ name }}</h2>
+    <ul class="row padding-bottom-large" data-id="{{ id }}">
+      {{#each items}}
+      <li class="col small-1-1 medium-1-2 large-1-4 padding-medium" data-component="item">
+        <h3 class="head-3 margin-bottom-small truncate">...</h3>
+        <span class="bg-maroon-transparent ratio ratio--16-9" {{#unless ../../logged_in}}data-modal-open="join"{{/unless}}>
+        </span>
+      </li>
+      {{/each}}
+    </ul>
+  {{/each}}
+</section>

@@ -1,0 +1,29 @@
+{
+  "name": "vhx-node-demo",
+  "version": "0.0.1",
+  "description": "Node.js VHX Demo Site.",
+  "author": "VHX",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "async": "^1.5.2",
+    "body-parser": "1.x",
+    "cookie-parser": "^1.4.1",
+    "dotenv": "0.x",
+    "express": "4.x",
+    "express-session": "1.x",
+    "fs-walk": "0.0.1",
+    "handlebars": "^3.0.3",
+    "path": "^0.12.7",
+    "randomstring": "^1.1.4",
+    "underscore": "^1.8.3",
+    "uuid": "^2.0.1",
+    "vhx": "1.5.1"
+  },
+  "scripts": {
+    "start": "nodemon core/app.js"
+  },
+  "main": "core/app.js",
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}

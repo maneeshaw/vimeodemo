@@ -1,0 +1,31 @@
+{{> _shared/github }}
+<section data-component="collections" class="padding-large">
+  <div class="slidecontainer">
+    <h1>Video Ratings</h1>
+    <br>
+    <br>
+    <input type="range" min="1" max="4" value={{ level }} class="slider" id="myRange">
+    <br>
+      <br>
+    <p>Rating: <span id="demo"></span></p>
+  </div>
+  <h1 id="colletion-title">Rating {{ level }}</h1>
+  <ul class="row padding-bottom-large" id="videos" data-id="{{ collectionId }}">
+    {{#each items}}
+    <li class="col small-1-1 medium-1-2 large-1-4 padding-medium" data-component="item">
+      <h3 class="head-3 margin-bottom-small truncate">...</h3>
+      <span class="bg-maroon-transparent ratio ratio--16-9" {{#unless ../../logged_in}}data-modal-open="join"{{/unless}}>
+      </span>
+    </li>
+    {{/each}}
+  </ul>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script>
+    $('#myRange').change(function(e) {
+      fetchRows(Number($(this).val()) + 69499)
+      $('#colletion-title').html('Rating ' + $(this).val())
+      // fetch('/slider', { method: 'post', body: { level: $(this).val() }})
+      // window.location.replace('slider?level=' + $(this).val())
+    })
+  </script>
+</section>
