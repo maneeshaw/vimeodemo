@@ -3,10 +3,15 @@ h1 {
 
 }
 
+body {
+  background-color: #F3ECE6;
+  color: #57211C;
+}
 
 .slidecontainer {
     width: 50vw;
     margin: 100px auto;
+    background-color: #F3ECE6;
 }
 
 .slider {
@@ -31,7 +36,7 @@ h1 {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: #4CAF50;
+    background: #410606;
     cursor: pointer;
 }
 
@@ -39,6 +44,6 @@ h1 {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: #4CAF50;
+    background: #410606;
     cursor: pointer;
 }
